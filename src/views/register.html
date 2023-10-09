@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registrate en MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/stylesREGISTER.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <!--<label for="name">Nombre y apellido:</label>-->
+        <input type="text" id="name" name="name" placeholder="Nombre y apellido" required>
+
+        <!--<label for="username">Nombre de usuario:</label>-->
+        <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+
+        <!--<label for="email">Email:</label>-->
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+        <label class="birth" for="birth">Fecha de nacimiento</label>
+        <input type="date" id="birth" name="birth" required>
+
+        <!--<label for="address">Domicilio:</label>-->
+        <input type="text" id="address" name="address" placeholder="Domicilio" required>
+
+        <label class="user" for="user">Perfil de usuario</label>
+            <div class="user">
+                <input type="radio" id="buy" name="action" value="comprar">Comprador</label>
+                <input type="radio" id="sell" name="action" value="vender">Vendedor</label>
+            </div>
+
+        <label class="categories" for="categories">Intereses</label>
+        <div class="checkbox">
+            <input type="checkbox" name="category" value="electro"></input>Electro</label>
+            <br>
+            <input type="checkbox" name="category" value="moda"></input>Moda</label>
+            <br>
+            <input type="checkbox" name="category" value="hogar"></input>Hogar</label>
+            <br>
+            <input type="checkbox" name="category" value="jugeteria"></input>Jugetería</label>
+            <br>
+            <input type="checkbox" name="category" value="vidaSana"></input>Vida sana</label>
+        </div>
+
+        <label class="image" for="txfImage">Foto de usuario</label>
+        <input type="file" id="txfImage" name="image" accept="image/jpg" accept="image/png">
+
+        <!--<label class="password" for="password">Contraseña</label>-->
+        <input type="text" id="password" name="password" placeholder="Contraseña" required>
+
+        <!--<label class="password" for="password">Confirmar contraseña</label>-->
+        <input type="text" id="password" name="password" placeholder="Cornfirmar contraseña" required>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar formulario</button>
+    </form>
+</body>
+</html>
